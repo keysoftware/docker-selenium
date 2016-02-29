@@ -1,4 +1,4 @@
-# Debian: Selenium + Firefox + Google Chrome Beta + XVFB
+# Debian: Selenium + Firefox + Google Chrome Beta + Xvfb
 
 # Pull the base image.
 FROM java:openjdk-8
@@ -20,7 +20,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
     apt-get update && apt-get install -y google-chrome-beta;\
     chmod -R +x /opt/google/
 
-# Install XVFB.
+# Install Xvfb.
 RUN apt-get update && apt-get install -y xvfb
 
 # Clean APT.
